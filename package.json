@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsnd --respawn --clear --quiet --transpile-only --ignore-watch node_modules ./src/server.ts",
+    "dev": "tsnd --respawn --clear --quiet --transpile-only --ignore-watch node_modules ./src/shared/http/server.ts",
     "build": "tsc",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix"
