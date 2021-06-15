@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsnd -r tsconfig-paths/register --respawn --clear --quiet --transpile-only --ignore-watch node_modules ./src/shared/http/server.ts",
+    "start:dev":"tsnd -r tsconfig-paths/register --respawn ./src/shared/http/server.ts",
     "build": "tsc",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix"

@@ -26,5 +26,5 @@ app.use(
 );
 
 app.listen(8080, () => {
-  console.log('Server runningg');
+  console.log('Server running');
 });
