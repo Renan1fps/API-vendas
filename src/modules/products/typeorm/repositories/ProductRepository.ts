@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { EntityRepository, Repository } from 'typeorm';
-import { Product } from '../entities/Product';
+import { Product } from '../Model/Product';
 
 @EntityRepository(Product)
 export class ProductRepository extends Repository<Product> {
