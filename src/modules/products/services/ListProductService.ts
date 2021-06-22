@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { getCustomRepository } from 'typeorm';
-import { Product } from '../typeorm/Model/Product';
+import { Product } from '../typeorm/entities/Product';
 import { ProductRepository } from '../typeorm/repositories/ProductRepository';
 
 class ListProductService {

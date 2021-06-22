@@ -9,7 +9,7 @@
     "build": "tsc",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix",
-    "tporm": "tsnd ./node_modules/typeorm/cli.js"
+    "orm": "tsnd ./node_modules/typeorm/cli.js"
   },
   "keywords": [],
   "author": "",
