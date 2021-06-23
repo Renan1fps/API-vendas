@@ -6,6 +6,7 @@ import { celebrate, Segments, Joi } from "celebrate";
 const productsRouter = Router()
 const productsController = new ProductsController()
 
+//validação de rotas
 productsRouter.get('/', productsController.index)
 
 productsRouter.get('/:id',
