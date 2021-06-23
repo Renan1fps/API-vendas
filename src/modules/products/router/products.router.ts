@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Router } from "express";
 import { ProductsController } from "../controllers/ProductsController";
-import { celebrate, Joi, Segments, errors } from "celebrate";
+import { celebrate, Segments, Joi } from "celebrate";
 
 const productsRouter = Router()
 const productsController = new ProductsController()
