@@ -8,6 +8,7 @@ const productsController = new ProductsController()
 
 productsRouter.get('/', productsController.index)
 
+//Validação de rotas
 productsRouter.get('/:id',
 celebrate({[Segments.PARAMS]:{
     id: Joi.string().uuid().required()}}),
