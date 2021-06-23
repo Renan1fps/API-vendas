@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { IIdRequest } from '@shared/contracts/IdRequest';
+import { IIdRequest } from '@shared/contracts/IIdRequest';
 import { AppError } from '@shared/errors/AppError';
 import { getCustomRepository } from 'typeorm';
 import { Product } from '../typeorm/entities/Product';
