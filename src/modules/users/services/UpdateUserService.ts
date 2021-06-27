@@ -21,4 +21,4 @@ class UpdateUserService {
     return user;
   }
 }
-export { UpdateUserService }
+export { UpdateUserService };
