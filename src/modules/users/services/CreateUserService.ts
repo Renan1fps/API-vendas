@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { IHttUserRequest } from "@shared/contracts/IHttpUserRequest";
 import { AppError } from "@shared/errors/AppError";
+import { hash } from "bcryptjs";
 import { getCustomRepository } from "typeorm";
 import { User } from "../typeorm/entities/User";
 import { UserRepository } from "../typeorm/repositories/UserRepository";
@@ -18,8 +19,11 @@ class CreateUserService{
         if(existsEmail){
             throw new AppError('This email is already being used')
         }
+
+        const hashPassword = await hash(email, 8)
+
         const user = await userRepository.create({
-            name, email, password
+            name, email, password: hashPassword
         })
 
         await userRepository.save(user)
